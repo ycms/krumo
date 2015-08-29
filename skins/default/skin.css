@@ -20,6 +20,8 @@ ul.krumo-node ul {
 div.krumo-root {
 	border: solid 1px black;
 	margin: 1em 0em;
+    position: relative;
+        z-index: 99999;
 	}
 ul.krumo-first {
 	font: normal 12px arial;
