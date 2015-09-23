@@ -447,6 +447,11 @@ class Krumo {
             exit;
         }
 
+        static $setheader = null;
+        if(empty($setheader) && $setheader = 1){
+            header("Content-type: text/html; charset=utf-8");
+        }
+
         // If we're capturing call dump() with just data and capture the output
         if ($second === KRUMO_RETURN) {
             ob_start();
